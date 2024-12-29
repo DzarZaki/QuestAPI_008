@@ -42,6 +42,7 @@ import com.example.pertemuan12.ui.costumwidget.CostumeTopAppBar
 import com.example.pertemuan12.ui.navigation.DestinasiNavigasi
 import com.example.pertemuan12.ui.viewmodel.HomeUiState
 import com.example.pertemuan12.ui.viewmodel.HomeViewModel
+import com.example.pertemuan12.ui.viewmodel.PenyediaViewModel
 
 object DestinasiHome : DestinasiNavigasi {
     override val route = "home"
