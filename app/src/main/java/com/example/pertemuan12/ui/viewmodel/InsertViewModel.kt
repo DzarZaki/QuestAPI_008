@@ -5,6 +5,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.pertemuan12.model.Mahasiswa
 import com.example.pertemuan12.repository.MahasiswaRepository
 import kotlinx.coroutines.launch
 
@@ -38,4 +39,13 @@ data class InsertUiEvent(
     val jenisKelamin: String = "",
     val kelas: String = "",
     val angkatan: String = ""
+)
+
+fun InsertUiEvent.toMhs(): Mahasiswa = Mahasiswa(
+    nim = nim,
+    nama = nama,
+    alamat = alamat,
+    jenisKelamin = jenisKelamin,
+    kelas = kelas,
+    angkatan = angkatan
 )
